@@ -23,6 +23,6 @@ function getState(day, current, props) {
   return state;
 }
 
-export default {
+export {
   getState
 };
