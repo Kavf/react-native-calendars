@@ -1,5 +1,6 @@
 const XDate = require('xdate');
-import {parseDate} from './interface';
+// import {parseDate} from './interface';
+const parseDate = require('./interface').parseDate
 
 function sameMonth(a, b) {
   return (
@@ -142,7 +143,7 @@ function getWeekDates(date, firstDay, format) {
   }
 }
 
-export default {
+module.exports = {
   weekDayNames,
   sameMonth,
   sameWeek,
